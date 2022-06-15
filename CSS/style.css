@@ -24,8 +24,8 @@ main {
 .container {
 	background-color: #fff;
 	width: 85%;
-	min-height: max-content;
-	height: 60%;
+	min-height: min-content;
+	height: fit-content;
 	display: flex;
 	flex-direction: column;
 }
@@ -57,4 +57,15 @@ main {
 
 .paragraph {
 	color: hsl(220, 15%, 55%);
+}
+
+.add-padding {
+	padding: 2em 0;
+}
+
+@media (min-width: 481px) {
+	.container {
+		max-width: 360px;
+		max-height: max-content;
+	}
 }
